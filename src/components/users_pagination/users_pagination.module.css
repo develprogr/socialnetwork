@@ -1,0 +1,37 @@
+.usersPages {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pageNumber {
+    margin: 0 2px;
+    padding: 3px 5px;
+    cursor: pointer;
+    border: solid 1px;
+    background-color: #FFF;
+    border-radius: 5px;
+
+}
+
+.pageNumber:hover {
+    background-color: #7d8c7d;
+    color: white;
+}
+
+.pageNumberFocus {
+    font-weight: bold;
+}
+
+.pagesButton {
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.pagesButton:hover {
+    background-color: #7d8c7d;
+    color: white;
+}

@@ -1,0 +1,8 @@
+.btn__follow {
+    width: 30%;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgb(128, 227, 240);
+    font-size: .7vw;
+    text-align: center;
+}

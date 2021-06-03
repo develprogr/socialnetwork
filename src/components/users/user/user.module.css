@@ -1,0 +1,35 @@
+.user {
+    margin: 50px 0 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.avaAndContacts {
+    background-color: transparent;
+}
+
+.followingButton {
+    margin: 25px auto;
+}
+
+.rightBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 30px;
+
+}
+
+.location {
+    border-bottom: dotted 1px;
+}
+
+.contact {
+    font-weight: 700;
+}
+
+.ava {
+    width: 100%;
+    border: 1px solid gray;
+
+}

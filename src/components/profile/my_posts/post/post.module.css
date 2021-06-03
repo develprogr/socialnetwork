@@ -1,0 +1,15 @@
+.post {
+    margin: 30px 0;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: #FFF;
+}
+
+.post img {
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}

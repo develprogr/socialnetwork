@@ -1,0 +1,15 @@
+.textareaBlock {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.errorTextarea {
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+.span {
+    margin-bottom: 10px;
+    color: red;
+}
+

@@ -1,0 +1,65 @@
+.spinner {
+    text-align: center;
+}
+
+.user__block {
+    border: 1px solid;
+    padding: 20px 20px 20px 0;
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fbe3c3;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+
+}
+
+.photo__follow {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+
+.user__block img {
+    width: 70%;
+    margin: 20px;
+    box-shadow: 3px 3px 5px #d8d1c4;
+}
+
+.user__block a {
+    text-align: center;
+}
+
+.info__block {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.name__location {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+
+.avaBorder {
+    box-shadow: 3px 3px 3px ;
+    border: 2px solid gray;
+}
+
+.status {
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    align-items: flex-end;
+}

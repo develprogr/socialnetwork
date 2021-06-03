@@ -1,0 +1,28 @@
+
+.addPost TextArea {
+    width: 500px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+.loginBlock {
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.loginBlock Input{
+    width: 250px;
+}
+
+.loginBlock .checkbox {
+    width: 15px;
+    margin: 15px 0;
+}
+
+.loginBlock .formError {
+    border: 1px solid red;
+    color: red;
+    padding: 5px;
+}

@@ -1,0 +1,12 @@
+.app__wrapper {
+	margin: 5px auto;
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+	grid-gap: 5px;
+
+}
+
+.app__content_wrapper {
+	background-color: antiquewhite;
+}
+

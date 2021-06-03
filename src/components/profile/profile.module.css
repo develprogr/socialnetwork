@@ -1,0 +1,26 @@
+.main_avatar {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-gap: 10px;
+}
+
+.addPost {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.textarea {
+    width: 500px;
+    min-height: 150px;
+    max-height: 500px;
+    resize: vertical;
+}
+
+.main_avatar img {
+    width: 200px;
+    border: 3px solid rgb(121 163 170);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px #8b8782;
+}

@@ -33,9 +33,9 @@ class App extends React.Component {
 	render() {
 
 
-		if (this.props.isFetching) { 
-			return <Preloader />
-		}
+		// if (this.props.isFetching) { 
+		// 	return <Preloader />
+		// }
 
 		return (
 			<BrowserRouter>

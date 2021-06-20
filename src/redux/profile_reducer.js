@@ -2,6 +2,7 @@ import { isAuthorizedAPI, profileAPI, usersAPI } from "../api/api";
 
 const ADD_POST = 'ADD_POST',
       MY_DATA = 'MY_DATA',
+      UPDATE_PROFILE_PHOTO = 'UPDATE_PROFILE_PHOTO',
       SET_STATUS = 'SET_STATUS';
 
 const initialState = {
@@ -19,6 +20,12 @@ const initialState = {
 
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
+
+        case UPDATE_PROFILE_PHOTO:
+            return {
+                ...state,
+                myData: {...state.myData, photos: action.photos}
+            }
 
         case MY_DATA:
             return {
@@ -54,9 +61,17 @@ const profileReducer = (state = initialState, action) => {
 
 export default profileReducer;
 
-export const addPostAC = (newPostText) => ({type: ADD_POST, newPostText});
-export const setStatusAC = (status) => ({type: SET_STATUS, status});
+export const addPostAC = newPostText => ({type: ADD_POST, newPostText});
+const setStatusAC = status => ({type: SET_STATUS, status});
+const updateProfilePhotoAC = photos => ({type: UPDATE_PROFILE_PHOTO, photos});
 
+
+export const updateProfilePhotoTC = photoFile => async dispatch => {
+    const response = await profileAPI.updateProfilePhoto(photoFile);
+        if (response.data.resultCode === 0) {
+            dispatch(updateProfilePhotoAC(response.data.data.photos));
+        }
+}
 
 export const updateMyStatusTC = status => async dispatch => {
     const response = await profileAPI.updateMyStatus(status);

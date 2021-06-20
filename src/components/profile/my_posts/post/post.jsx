@@ -7,11 +7,7 @@ const Post = React.memo((props) => {
     return (
         <div className={st.post}>
                 <img src={
-                    props.userProfile
-                        ? props.userProfile.photos.large
-                            ? props.userProfile.photos.large
-                            : ava
-                        : ava
+                    props.avatar ? props.avatar : ava
                 } alt='' />
             <div>
                 {props.message}

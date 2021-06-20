@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-gap: 10px;
+    position: relative;
 }
 
 .addPost {
@@ -23,4 +24,22 @@
     border: 3px solid rgb(121 163 170);
     box-sizing: border-box;
     box-shadow: 2px 2px 3px #8b8782;
+}
+
+.inputAva {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+
+}
+
+.main_avatar img:hover ~ .inputAva{
+    display: block;
+    cursor: pointer;
+}
+
+.inputAva:hover {
+    display: block;
+    cursor: pointer;
 }

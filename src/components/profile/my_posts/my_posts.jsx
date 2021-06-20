@@ -4,14 +4,15 @@ import st from './my_posts.module.css';
 
 
 const MyPosts = (props) => {
-
     return (
         <div className={st.myPosts}>
             <div>
                 {props.posts.map(p => <Post
                     message={p.message}
                     likes_count={p.likes_count}
-                    key={(p.id).toString()}/>)}
+                    key={(p.id).toString()}
+                    avatar={props.avatar}
+                    />)}
             </div>
 
         </div>

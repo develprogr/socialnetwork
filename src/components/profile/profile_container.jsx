@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { addPostAC, getMyStatusTC, myDataTC, updateMyStatusTC} from '../../redux/profile_reducer';
+import { addPostAC, getMyStatusTC, myDataTC, updateMyStatusTC, updateProfilePhotoTC} from '../../redux/profile_reducer';
 import Profile from './profile';
 import {compose} from 'redux';
 
@@ -18,6 +18,10 @@ const mapDispatchToProps = (dispatch) => {
     return {
 		addPost: (newPostText) => {
 			dispatch(addPostAC(newPostText))
+		},
+
+		updateProfilePhoto: photoFile => {
+			dispatch(updateProfilePhotoTC(photoFile))
 		},
 
 		myProfileData: () => dispatch(myDataTC()),

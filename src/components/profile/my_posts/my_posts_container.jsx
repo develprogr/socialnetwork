@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 const mapStateToProps = (state) => {
     return {
-        avatar: state,
+        avatar: state.profilePage.myData ? state.profilePage.myData.photos.large : null,
         posts: state.profilePage.posts
     }
 }

@@ -5,6 +5,7 @@ import { MyPostsContainer } from './my_posts/my_posts_container';
 import ProfileStatusContainer from './profile_status/profile_status_container';
 import {AddPost} from '../../forms/add_post';
 import { Redirect } from 'react-router';
+import { profileAPI } from '../../api/api';
 
 
 const Profile = (props) => {
@@ -18,6 +19,10 @@ const Profile = (props) => {
         return <Redirect to={'/login'} />
     }
 
+    const onSelectPhotoFile = e => {
+        props.updateProfilePhoto(e.target.files[0]);
+    }
+
     return (
         <div>
             <div className={s.main_avatar}>
@@ -27,7 +32,9 @@ const Profile = (props) => {
                             ? props.myProfile.photos.large
                             : ava
                         : ava
-                } alt='' />
+                } alt=''  />
+
+                <input type='file' onChange={onSelectPhotoFile} className={s.inputAva}/>
 
                 <ProfileStatusContainer
                     status = {props.status}

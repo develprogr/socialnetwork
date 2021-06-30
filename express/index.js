@@ -29,4 +29,4 @@ app.get('/api/users', (req, res) => {
 });
 
 
-app.listen(4000, () => console.log('Listning server on the port ' + port));
+app.listen(4000, () => console.log('Listning server on the port ' + 4000));
